@@ -1,0 +1,79 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+#content{
+  margin: none;
+  padding: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: grab;
+  background: radial-gradient(#3bf117, rgb(0, 192, 206));
+  user-select: none;
+}
+
+.content{
+  margin: none;
+  padding: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: grab;
+  user-select: none;
+}
+
+.datos{
+  height: 100%;
+  width: 400px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.altura-div{
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.section{
+  margin: 20px;
+  display: block;
+}
+
+.datos-input{
+  position: absolute;
+  bottom: 40px;
+}
+
+.datos-output{
+  position: absolute;
+  top: 20px;
+}
+
+#chart_divD{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  z-index: 999;
+  width: 500px;
+  height: 500px;
+}
+
+#chart_div{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 999;
+  width: 500px;
+  height: 500px;
+}
+
+#chart_div > div > div:nth-child(1) > div > svg > rect {
+  fill: #fff;
+  border-radius: 15px;
+}
