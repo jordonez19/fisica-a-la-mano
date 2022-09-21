@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" href="/Caida-libre-master/css/caida.css">
   <meta charset="utf-8">
-  <title>Caida libre - Tierra</title>
+  <title>Caida libre - Jupiter</title>
 </head>
 
 <body>
@@ -12,22 +12,32 @@
     <div class="content-cd">
       <div id="chart_div"></div>
       <div id="chart_divVf"></div>
-
-      <svg id="content" viewBox="-370 -0 680 10">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#360940;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#F05F57;stop-opacity:1" />
-          </linearGradient>
-        </defs>
+      <svg id="content" viewBox="-370 -0 680 10">  
+      <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#360940;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F05F57;stop-opacity:1" />
+    </linearGradient>
+      </defs>
         <rect id="suelo" x="-10000" y="0" width="20000" height="auto" />
-        <circle id="cuerpo" cx="2.6" cy="-310" r="20" fill="url(#grad1)" />
+        <circle id="cuerpo" cx="2.6" cy="-300" r="25" fill="url(#grad1)" />
       </svg>
 
-
-
       <div class="datos">
-
+        <div class="datos-output">
+          <div class="section">
+            <span>Caida libre <span class="span-datos" id="a"></span> </span>
+          </div>
+          <div class="section">
+            <span>Velocidad Final: <span class="span-datos" id="vf"></span>m/s </span>
+          </div>
+          <div class="section">
+            <span>Gravedad Jupiter: <span class="span-datos" id="a">24,7</span>m/s² </span>
+          </div>
+          <div class="section">
+            <span>Velocidad Inicial (m/s): <span class="span-datos" id="vo">0</span>m/s </span>
+          </div>
+        </div>
         <div class="datos-input">
           <div class="section">
             <label>Altura (m):</label>
@@ -48,30 +58,16 @@
             </div>
           </div>
         </div>
-        <div class="datos-output">
-          <div class="section">
-            <span>Caida libre <span class="span-datos" id="a"></span> </span>
-          </div>
-          <div class="section">
-            <span>Velocidad Final: <span class="span-datos" id="vf"></span>m/s </span>
-          </div>
-          <div class="section">
-            <span>Gravedad: <span class="span-datos" id="a">9.81</span>m/s² </span>
-          </div>
-          <div class="section">
-            <span>Velocidad Inicial (m/s): <span class="span-datos" id="vo">0</span>m/s </span>
-          </div>
-        </div>
       </div>
 
 
-
+      
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="./js/caida.js"></script>
+  <script src="./js/jupiter.js"></script>
 </body>
 
 </html>

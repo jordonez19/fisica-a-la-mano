@@ -1,15 +1,19 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  color: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 #content{
   margin: none;
   padding: none;
   position: absolute;
   top: 0px;
   left: 0px;
-  cursor: grab;
-  background: radial-gradient(#3bf117, rgb(0, 192, 206));
+  background-image: linear-gradient( 137.9deg,  rgba(78,156,226,1) 7.8%, rgba(62,146,69,1) 16%, rgba(251,220,23,1) 32.7%, rgba(242,160,35,1) 50.4%, rgba(253,12,12,1) 71.5%, rgba(192,26,129,1) 83.1% );
   user-select: none;
 }
 
@@ -19,7 +23,6 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  cursor: grab;
   user-select: none;
 }
 
@@ -71,9 +74,49 @@
   z-index: 999;
   width: 500px;
   height: 500px;
+  border: rgba(255, 255, 255, 0.323) solid 2px;
+  box-shadow: 0 0 10px #fff; 
 }
 
 #chart_div > div > div:nth-child(1) > div > svg > rect {
-  fill: #fff;
+  fill: rgba(216, 187, 187, 0.411);
+}
+
+.btn{
+  border: solid #000000 3px;
+  padding: 10px;
   border-radius: 15px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(182, 182, 182, 0.471);
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #000000;
+  text-align: center;
+  margin: 7px 0;
+  outline: none;
+  width: 7cm;
+}
+input::placeholder{
+  color: #000000;
+}
+
+input:active{
+  border: none;
+  outline: none;
+  color: #000000;
+}
+
+svg {
+  filter: drop-shadow(0 85px 25px gray);
+}
+
+
+@media screen and (max-width: 900px){
+
 }

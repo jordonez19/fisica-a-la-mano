@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
 
 *{
@@ -13,30 +12,36 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+}
+html{
+    background-image: url('planetasBG/noche-cielo-estrellas-y-cometa_1920x1080_xtrafondos.com.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body{
-    height:100vh;
+    height:auto;
+    padding: 1cm 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 46%, rgba(31,5,51,1) 89%);
+    text-align: center;
 }
 .btn{
     margin: 10px 0 ;
     padding: 15px;
     font-size: 20px;
     background-color: transparent;
-    border: solid 3px cyan;
+    border: solid 3px #ffff;
     box-shadow: 2px 2px 15px  rgb(162, 182, 177) ;
-    color: cyan;
+    color: red;
     border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
+    text-align: center;
+    background: rgba(206, 202, 202, 0.356);
 }
 .btn:active{
     padding: 10px;
@@ -45,22 +50,104 @@ body{
 
 }
 h1{
-    color: cyan;
+    color: red;
     font-size: 45px;
     margin-bottom: 1cm;
     text-transform: uppercase;
     font-weight: 600;
 
 }
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid 3px #ffff;
+    border-radius: 15px;
+    background: rgba(206, 202, 202, 0.356);
+    padding: 0.5cm 1cm;
+    align-items: center;
+}
+.contenedor-grid img{
+    width: 100px;
+    height: 100px;
 
+}
+@media screen and (max-width: 800px){
+    .btn{
+        width:90%;
+    }
+    body{
+        height:auto;
+        padding: 1cm 0;
+    }
+
+}
+
+h3,
+h2{
+    color: red;
+    text-transform: uppercase;
+}
     </style>
-
 </head>
 <body>
-    <h1>Fisica a la mano</h1>
-    <a href="https://sweet-palmier-066ed8.netlify.app/" class="btn">Vectores y Triangulos</a>
-    <a href="Caida-libre-master/index.html" class="btn">Caida Libre</a>
-    <a href="" class="btn">Movimiento uniforme</a>
+    <h1 class="btn" style="font-size: 45px;">Fisica a la mano</h1>
+    
+    <div class="contenedor-grid">
+        <b></b>
+        <h2>Caida libre</h2>
+        <b></b>
+
+        <b></b>
+        <section>
+            <a href="./Caida-libre-master/sol.html"><img src="/planetasBG/sol.png" alt=""></a>
+            <h3>sol</h3>
+        </section>
+        <b></b>
+        <section>
+            <a href="./Caida-libre-master/mercurio.html"><img src="/planetasBG/mercurio.png" alt=""></a>
+            <h3>mercurio</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/venus.html"><img src="/planetasBG/venus.png" alt=""></a>
+            <h3>venus</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/index.html"><img src="/planetasBG/tierra.png" alt=""></a>
+            <h3>tierra</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/marte.html"><img src="/planetasBG/marte.png" alt=""></a>
+            <h3>marte</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/luna.html"><img src="/planetasBG/luna.png" alt=""></a>
+            <h3>luna</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/jupiter.html"><img src="/planetasBG/jupiter.png" alt=""></a>
+            <h3>jupiter</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/saturno.html"><img src="/planetasBG/saturno.png" alt=""></a>
+            <h3>saturno</h3>
+        </section>
+        
+        <section>
+            <a href="./Caida-libre-master/urano.html"><img src="/planetasBG/urano.png" alt=""></a>
+            <h3>urano</h3>
+        </section>
+        <section>
+            <a href="./Caida-libre-master/neptuno.html"><img src="/planetasBG/neptuno.png" alt=""></a>
+            <h3>neptuno</h3>
+        </section>
+    </div>
+    <a href="./vectores_y_triangulos/index.html" class="btn">Vectores y Triangulos</a>
+    <a href="./JoahnSwasenaiger/index.html" class="btn">Movimiento Rectilineo Uniforme</a>
+    <a href="" class="btn">Teorema de Pitagoras</a>
+    <!-- 
+    <a href="Caida-libre-master/index.html" class="btn">Caida Libre Tierra</a>
+    <a href="Jupiter/index.html" class="btn">Caida libre Jupiter</a> -->
     <!-- <a href="" class="btn">linksito</a> -->
 </body>
 </html>
